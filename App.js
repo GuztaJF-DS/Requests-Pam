@@ -1,21 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React,{Component} from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+import api from './components/api'
+import Movie from './components/Movie'
 
-export default function App() {
-  return (
+class App extends Component{
+
+  constructor(props){
+    super(props);
+    this.state={
+      Movie:[]
+    }
+  }
+
+  async componentDidMount(){
+    const response = await api.get('/?t=Shrek&apikey=539c05e4')
+    this.setState({
+      Movie:response.data
+    })
+  }
+
+  render(){
+    return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Movie  data={this.state.Movie}/>
     </View>
-  );
+  )
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#9df27c',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+export default App
