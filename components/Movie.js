@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{Component} from 'react'
 import { Text,Image, View, StyleSheet } from 'react-native'
 
@@ -19,8 +18,6 @@ class Movie extends Component{
   }
 }
 
-
-=======
 import React,{Component} from 'react'
 import { Text,Image, View, StyleSheet } from 'react-native'
 
@@ -41,6 +38,4 @@ class Movie extends Component{
   }
 }
 
-
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
 export default Movie

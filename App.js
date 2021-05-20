@@ -1,9 +1,6 @@
 import React,{Component} from 'react'
-<<<<<<< HEAD
 import { Text, View, StyleSheet,Button,TextInput } from 'react-native'
-=======
 import { Text, View, StyleSheet } from 'react-native'
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
 import api from './components/api'
 import Movie from './components/Movie'
 
@@ -12,12 +9,9 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state={
-<<<<<<< HEAD
       Movie:[],
       SetMovie:""
-=======
       Movie:[]
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
     }
   }
 
@@ -26,7 +20,6 @@ class App extends Component{
     this.setState({
       Movie:response.data
     })
-<<<<<<< HEAD
     this.loading=this.loading.bind(this)
   }
 
@@ -35,15 +28,12 @@ class App extends Component{
     this.setState({
       Movie:response.data
     })
-=======
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
   }
 
   render(){
     return (
     <View style={styles.container}>
       <Movie  data={this.state.Movie}/>
-<<<<<<< HEAD
       <TextInput
         placeholder="Digite o nome do filme"
         onChangeText={
@@ -51,8 +41,6 @@ class App extends Component{
         }
       />
       <Button title="buscar" onPress={this.loading()}/>
-=======
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
     </View>
   )
   }
@@ -66,8 +54,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-<<<<<<< HEAD
 export default App
-=======
-export default App
->>>>>>> f2aef1d2fdf3e1ce87ab915aa2e487562ef43d3b
