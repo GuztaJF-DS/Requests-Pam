@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import { Text, View, StyleSheet,Button,TextInput } from 'react-native'
-import { Text, View, StyleSheet } from 'react-native'
 import api from './components/api'
 import Movie from './components/Movie'
 
@@ -11,7 +10,6 @@ class App extends Component{
     this.state={
       Movie:[],
       SetMovie:""
-      Movie:[]
     }
   }
 
@@ -49,7 +47,7 @@ class App extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#9df27c',
+    backgroundColor: '#ed4f09',
     alignItems: 'center',
     justifyContent: 'center',
   },

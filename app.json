@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "Shrek",
+    "name": "Movie Finder",
     "slug": "requicao",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ed4f09"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,11 +20,11 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.Jfenterprizes.Shrek",
+      "package": "com.Jfenterprizes.Mov",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#ed4f09"
       }
     },
     "web": {
